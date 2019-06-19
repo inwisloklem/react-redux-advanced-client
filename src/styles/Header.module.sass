@@ -1,0 +1,28 @@
+@import "../variables"
+
+.link
+  color: inherit
+  text-decoration: inherit
+  transition: $t-primary
+
+  &:hover
+    color: $c-accent
+
+  &:global(.active)
+    border-bottom: solid 1px $c-primary
+    color: inherit
+    cursor: default
+
+.list
+  display: flex
+  align-items: center
+  margin: 0
+  margin-bottom: 20px
+  padding: 0
+  list-style: none
+
+.item
+  font-size: 18px
+
+  &:not(:last-of-type)
+    margin-right: 10px
